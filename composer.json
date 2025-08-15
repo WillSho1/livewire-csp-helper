@@ -1,0 +1,24 @@
+{
+    "name": "willsho1/livewire-csp-helper",
+    "description": "Solves script loading issues when using Livewire, the Alpine.js CSP build, and Vite with HMR.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Will Shostak",
+            "email": "whshocon@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WillSho1\\CspHelper\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WillSho1\\CspHelper\\LivewireCspServiceProvider"
+            ]
+        }
+    }
+}
